@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+            box-sizing: border-box;
+        }
+        body
+        {
+            margin: 0;
+        }
+        .container{
+            display: flex;
+            margin: auto;
+            width: 50%;
+
+            align-items: center;
+            
+            
+            
+        }
+        .h1{
+            
+            color: black;
+            text-align: center;
+
+        }
+        .watch-shoes
+        { 
+            text-align: center;
+            color: black;
+        }
+        .watch-buy
+        {
+            background-color:red;
+            color: black;
+            height: 50px;
+            width: 90px;
+            
+        }
+        .img-watch
+        {
+            text-align: center;
+            padding: 20px;
+            margin: 20px;
+        }
+        .column-50
+        {
+            background-color:orange;
+            text-align: center;
+            margin-left: 20px;
+            
+        }
+        @media screen and (max-width: 500px)
+        {
+            .column-50
+            {
+                background-color:red;
+                margin-bottom: 15px;
+
+            }
+            .row-50
+            {
+                flex-direction: column-reverse;
+            }
+            .watch-buy
+            {
+                background-color:orange;
+            }
+        }
+            
+        
+        .row-50
+        {
+            display: flex;
+            padding: 20px;; 
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row-50">
+        <div class="column-50">
+            <img  class="img-watch" height="200px" src="https://staticimg.titan.co.in/Titan/Catalog/1829QL01_1.jpg?pView=pdp">
+            <h1>watch</h1>
+            <p class="watch-shoes">This is the titan company watch and the price of this watch is 5000$</p>
+            <button class="watch-buy">buy</button>
+
+
+        </div>
+        <div class="column-50">
+            <img class="img-watch" height="200px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtT2hj2Ur1KIRN2zAEh-FhRUyCIqILQEYxHg&usqp=CAU">
+            <h1>shoes</h1>
+            <p class="watch-shoes">This is the armani company shoes and the price of this shoes is 500$</p>
+            <button class="watch-buy">buy</button>
+
+
+        </div>
+     </div>   
+    </div>
+    
+</body>
+</html>
