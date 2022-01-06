@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <style>
+        #img-food {
+            height: 500px;
+            width: 700px;
+        }
+        #buy-button {
+            text-align: center;
+            background-color:black;
+            color:white;
+        }
+        #font-food
+        {
+            font-size: 70px;
+        }
+        #font-price
+        {
+            font-size: 40px;
+        }
+        
+        {
+            align-items: left;
+        }
+        #mexican-food
+        {
+            text-align: left;
+        }
+        #punjabi-food
+        {
+            text-align: center;
+        }
+        
+        #south-indian
+        {
+            text-align: right;
+        }
+        .card-body {
+            align-content: center;
+            /* margin:30px; */
+        }
+
+        #img1,
+        #img2,
+        #img3 {
+            height: 700px;
+            vertical-align: middle;
+            border-style: none;
+
+        }
+        .form-group {
+            margin:20px 0px;
+        }
+
+       
+        
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img id="img-food"src="https://media-cdn.tripadvisor.com/media/photo-s/11/58/29/a7/best-food-in-jammu.jpg" class="d-block w-100" alt="...">
+            <div id="mexican-food" class="carousel-caption d-none d-md-block">
+              <h5 id="font-food">Mexican food</h5>
+              <p id="font-price">Get awesome Mexican food at 249/-only</p>
+              <button id="buy-button">Buy</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img id="img-food"src="https://manofmany.com/wp-content/uploads/2019/02/menulog-food-delivery-app-4.jpg" class="d-block w-100" alt="...">
+            <div id="punjabi-food" class="carousel-caption d-none d-md-block">
+              <h5 id="font-food">Punjabi Food</h5>
+              <p id="font-price">Get awesome punjabi food at 249/-only</p>
+              <button id="buy-button">Buy</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img id="img-food"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ4ofSj3jtFV9Az3OnIwNFaX3obuiffRz7Rg&usqp=CAU" class="d-block w-100" alt="...">
+            <div id="south-indian" class="carousel-caption d-none d-md-block">
+              <h5 id="font-food">South indian food</h5>
+              <p id="font-price">Get awesome South indian food at 249/-only</p>
+              <button id="buy-button">Buy</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="card-group">
+        <div class="card">
+            <img class="rounded-circle"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                alt="Generic placeholder image" width="140" height="140">
+            <div class="card-body">
+                <h2 class="card-title">Card title</h2>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+                <button class="btn btn-primary" type="submit">View Details</button>
+            </div>
+        </div>
+        <div class="card">
+            <img class="rounded-circle"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                alt="Generic placeholder image" width="140" height="140">
+            <div class="card-body">
+                <h2 class="card-title">Card title</h2>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <button class="btn btn-primary" type="submit">View Details</button>
+            </div>
+        </div>
+        <div class="card">
+            <img class="rounded-circle"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                alt="Generic placeholder image" width="140" height="140">
+            <div class="card-body">
+                <h2 class="card-title">Card title</h2>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This card has even longer content than the first to show that equal height action.</p>
+                <button class="btn btn-primary" type="submit">View Details</button>
+            </div>
+        </div>
+    </div>
+    <div class="card mb-3" id="long-cards">
+        <div class="row g-0" style="align-items: center;">
+            <div class="col-md-4">
+                <img src="https://images.all-free-download.com/images/graphicwebp/alien_fig_tree_planet_x_wallingford_seattle_washington_usa_517559.webp"
+                    class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h1 class="card-title">Oh yeah, it's that good. See for yourself.</h1>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional
+                        content. This content is a little bit longer.</p>
+                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card mb-3" id="long-cards" id="second-card">
+        <div class="row g-3" style="align-items: center;">
+            <div class="col-md-8 ">
+                <div class="card-body">
+                    <h1 class="card-title">Oh yeah, it's that good. See for yourself.</h1>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional
+                        content. This content is a little bit longer.</p>
+                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="https://images.all-free-download.com/images/graphicwebp/sunrise_3_x_sun_drawing_218418.webp"
+                    class="img-fluid rounded-start" alt="...">
+            </div>
+        </div>
+    </div>
+    <div class="card mb-3" id="long-cards" style="align-items: center;">
+        <div class="row " style="align-items: center;">
+            <div class="col-md-4">
+                <img src="https://images.all-free-download.com/images/graphicwebp/cellar_x_566119.webp"
+                    class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h1 class="card-title">Oh yeah, it's that good. See for yourself.</h1>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional
+                        content. This content is a little bit longer.</p>
+                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
